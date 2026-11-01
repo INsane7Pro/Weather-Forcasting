@@ -1,0 +1,156 @@
+# 🌦️ Weather Forecast AI
+
+An AI-powered Weather Forecasting project built using Python and Machine Learning. It uses historical weather data to train a Random Forest Classifier and predict weather conditions based on atmospheric parameters.
+
+## 🚀 Project Overview
+
+The Weather Forecast AI project analyzes historical weather information and applies machine learning techniques to predict weather conditions.
+
+The model is trained using weather-related features such as temperature, humidity, wind speed, visibility, pressure, and precipitation type.
+
+It uses a Random Forest Classification algorithm to learn patterns from historical weather data and generate predictions.
+
+## ✨ Features
+
+- **Weather Data Processing:** Extracts and processes historical weather datasets.
+- **Data Preprocessing:** Cleans the dataset and handles categorical values using Label Encoding.
+- **Machine Learning:** Uses Random Forest Classifier for weather prediction.
+- **Model Training:** Trains the model using historical weather records.
+- **Model Persistence:** Saves the trained model using Pickle.
+- **Weather Prediction:** Predicts weather conditions using atmospheric input parameters.
+- **Label Mapping:** Converts encoded prediction outputs back into readable weather conditions.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Pandas | Data manipulation and analysis |
+| NumPy | Numerical operations |
+| Scikit-learn | Machine learning and preprocessing |
+| Random Forest | Weather classification |
+| Matplotlib | Data visualization |
+| Pickle | Saving and loading trained models |
+
+## 📂 Project Structure
+
+```text
+Weather-Forecast-AI-Example/
+│
+├── Training/
+│   ├── Features/
+│   │   └── utils.py
+│   │
+│   ├── local_data/
+│   │   ├── weatherHistory.csv.zip
+│   │   └── model/
+│   │
+│   └── maker_with_weather_history_csv.py
+│
+├── main.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+*Note: Generated model files, extracted datasets, and other supporting files may vary depending on your local setup.*
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/Weather-Forecast-AI-Example.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd Weather-Forecast-AI-Example
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate the Virtual Environment
+
+**Windows:**
+
+```powershell
+.venv\Scripts\activate
+```
+
+### 5. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🧠 Model Training
+
+To train the model using the first weather dataset, execute:
+
+```bash
+python main.py --train_0
+```
+
+The program processes the historical weather dataset, prepares the training data, trains the Random Forest model, and saves the trained model and label information.
+
+## 🔮 Weather Prediction
+
+After successful model training, execute:
+
+```bash
+python main.py --predict_0
+```
+
+The program loads the trained model and predicts weather conditions using the configured sample atmospheric parameters.
+
+## 🌤️ Input Parameters
+
+The prediction model uses the following weather features:
+
+- Precipitation Type
+- Temperature (°C)
+- Apparent Temperature (°C)
+- Humidity
+- Wind Speed (km/h)
+- Wind Bearing (degrees)
+- Visibility (km)
+- Pressure (millibars)
+
+## 🤖 Machine Learning Algorithm
+
+**Random Forest Classifier**
+
+Random Forest is an ensemble learning algorithm that combines multiple decision trees to perform classification.
+
+In this project, it learns relationships between atmospheric conditions and historical weather summaries to predict weather categories.
+
+## 📌 Future Improvements
+
+- Develop an interactive web interface using Flask.
+- Integrate real-time weather API data.
+- Allow users to enter custom weather parameters.
+- Display weather predictions with visualizations.
+- Improve prediction performance through hyperparameter tuning.
+- Add weather forecasting dashboards and historical trend analysis.
+
+## 👨‍💻 Author
+
+**Aditya Kumar**
+
+B.Tech Computer Science and Engineering Student
+
+- GitHub: [INsane7Pro](https://github.com/INsane7Pro)
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub!
+
+---
+
+*Built with Python and Machine Learning.*
