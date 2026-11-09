@@ -18,7 +18,7 @@ It uses a Random Forest Classification algorithm to learn patterns from historic
 - **Model Training:** Trains the model using historical weather records.
 - **Model Persistence:** Saves the trained model using Pickle.
 - **Weather Prediction:** Predicts weather conditions using atmospheric input parameters.
-- **Label Mapping:** Converts encoded prediction outputs back into readable weather conditions.
+
 
 ## 🛠️ Technologies Used
 
