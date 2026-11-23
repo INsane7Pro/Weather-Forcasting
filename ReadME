@@ -2,7 +2,7 @@
 
 An AI-powered Weather Forecasting project built using Python and Machine Learning. It uses historical weather data to train a Random Forest Classifier and predict weather conditions based on atmospheric parameters.
 
-## 🚀 Project Overview-
+## 🚀 Project Overview:-
 
 The Weather Forecast AI project analyzes historical weather information and applies machine learning techniques to predict weather conditions.
 
